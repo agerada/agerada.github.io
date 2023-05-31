@@ -3,4 +3,6 @@ permalink: /notes/
 title: "Notes to accompany presentations"
 ---
 
-[Brucellosis presentation 2023](https://agerada.github.io/presentations/bru.html)
+[Brucellosis presentation](https://agerada.github.io/presentations/bru.html)
+
+[Laboratory exposures presentation](https://agerada.github.io/presentations/lab_exposures.html)
