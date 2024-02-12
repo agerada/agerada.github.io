@@ -3,8 +3,6 @@ title: "Misunderstood Antimicrobials — The Tigecycline Edition"
 date: 2023-04-04
 ---
 
-# Misunderstood Antimicrobials - The Tigecycline Edition
-
 Tigecycline is a somewhat controversial antimicrobial. I'm considering starting a collection of articles discussing "misunderstood antimicrobials" - chloramphenicol would of course be the series finale. Since tigecycline is an often discussed antimicrobial in infection circles, I thought I would detail out my position. 
 
 ## History
