@@ -1,6 +1,6 @@
 ---
 title: "Pneumococcus"
-date: 2020-10-27
+date: 2021-03-23
 ---
 
 I believe there is a list of bacterial pathogens which are really true classics of the bacteriology field. They have a rich historical background and knowledge of these diseases has evolved in such a way over the past ~100 years that every bacteriologist must have a good understanding of them. Currently, my list stands as follows:
@@ -12,7 +12,7 @@ I believe there is a list of bacterial pathogens which are really true classics 
 
 I have kept this list purposefully austere, and will admit bacteria over time, if they have done enough to pass the strict admission criteria.
 
-Bacteriologists have known about the pneumococcus since 1881, when Sternberg and Pasteur independently described it in the US and France respectively (in the same year). The story of Sternberg's discovery is particularly appealing. He was working on finding the cause of malaria and one of his experiments involved injecting rabbits with swamp samples from New Orleans. For these experiments, he also injected "control rabbits" with his own saliva. Much to his surprise, these control rabbits rapidly died a horrible death in 48 hours (I will need to dig up his original reports to see what happened to the rabbits injected with swamp fluid). He must have been fascinated by this surprise discovery, as he went on to titrate the concentration of saliva that caused rabbit death (1.25c3 to 1.75c3 injected subcutaneously). He also demonstrated that the diplococcic pneumococcus was the cause of death.
+Bacteriologists have known about the pneumococcus since 1881, when Sternberg and Pasteur independently described it in the US and France respectively (in the same year). The story of Sternberg's discovery is particularly appealing. He was working on finding the cause of malaria and one of his experiments involved injecting rabbits with swamp samples from New Orleans. For these experiments, he also injected "control rabbits" with his own saliva. Much to his surprise, these control rabbits rapidly died a horrible death in 48 hours (I will need to dig up his original reports to see what happened to the rabbits injected with swamp fluid). He must have been fascinated by this surprise discovery, as he went on to titrate the concentration of saliva that caused rabbit death (1.25c^3^ to 1.75c^3^ injected subcutaneously). He also demonstrated that the diplococcic pneumococcus was the cause of death.
 
 The pneumococcus has many features that I argue warrant its admission to this small list of pathogens:
 
