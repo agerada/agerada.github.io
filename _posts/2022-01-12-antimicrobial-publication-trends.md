@@ -55,7 +55,19 @@ Tigecycline was approved around 2005. The number of publications reflect this, w
 
 ```R
 AMR::antibiotics$name %>% head %>% print
+```
+
+```
+## [1] "4-aminosalicylic acid" "5-fluorocytosine"      "Acetylmidecamycin"    
+## [4] "Acetylspiramycin"      "Aldesulfone sodium"    "Amikacin"
+```
+
+```R
 AMR::antibiotics$name %>% length %>% print
+```
+
+```
+## [1] 456
 ```
 
 We've got 456 agents listed here. Next we'll need to expand the dataframe with information about whether each agent is detected in the title text. This can get a bit messy because a publication can have multiple (or none) agents. I'm sure there must be a more elegant way to do this (please comment below!) but I have gone for a brute additional boolean column for each agent using a for-loop. 
@@ -88,6 +100,14 @@ top_20_abx <- data_long %>%
 print(top_20_abx)
 ```
 
+```
+##  [1] "Methicillin"    "Vancomycin"     "Ofloxacin"      "Ciprofloxacin" 
+##  [5] "Colistin"       "Linezolid"      "Fluconazole"    "Tetracycline"  
+##  [9] "Daptomycin"     "Tigecycline"    "Amphotericin B" "Rifampicin"    
+## [13] "Clarithromycin" "Isoniazid"      "Levofloxacin"   "Erythromycin"  
+## [17] "Azithromycin"   "Gentamicin"     "Meropenem"      "Imipenem"
+```
+
 These are all recognisable agents - no major suprises here. We can now use this data to plot trends in publications for individual agents over time. 
 
 ```R
@@ -100,6 +120,8 @@ data_long %>%
   geom_line() +
   facet_wrap(~ antibiotic)
 ```
+
+![Trends for publications of the top 20 mentioned antibiotic agents](../assets/images/publication_trends/2.png)
 
 Two antibiotics stand out. Publications on colistin have been steadily increasing over the past ~10 years. This is not surprising and reflects the emergence of carbapenem-resistant bacteria, which has reignited interest in this old antibiotic. I imagine that interest will plateau over the next few years, reflecting the release of alternative agents with activity against carbapenem-resistant bacteria. 
 
@@ -116,6 +138,8 @@ data_long %>%
   facet_wrap(~ antibiotic) +
   scale_y_log10()
 ```
+
+![Trends for publications of the top 20 mentioned antibiotic agents (log scale)](../assets/images/publication_trends/3.png)
 
 Most trends are quite stable. Antimicrobials released within the observed time frame reveal quite an interesting trend - publications peak relatively quickly and are then quite stable. Some other trends are also interesting, such as a steady increase in rifampicin. The slope of this is quite similar to isoniazid. This suggests that most of these publications are related to TB. A (not too scientific way) to visualise this could be a word cloud. 
 
@@ -159,11 +183,15 @@ make_wordcloud <- function(x, abx){
 make_wordcloud(data_long, 'Rifampicin')
 ```
 
+![Rifampicin word cloud](../assets/images/publication_trends/4.png)
+
 Indeed the word cloud tilts towards TB terms (tuberculosis, mycobacterium, isoniazid). If we compar this to ciprofloxacin, for example, the results are different. Here we mainly see "salmonella", "pseudomonas", "escherichia". 
 
 ```R
 make_wordcloud(data_long, 'Ciprofloxacin')
 ```
+
+![Ciprofloxacin word cloud](../assets/images/publication_trends/5.png)
 
 ## Conclusion
 
