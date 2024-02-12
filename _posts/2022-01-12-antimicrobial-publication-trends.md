@@ -49,7 +49,7 @@ data %>% filter(
   plot(n ~ year)
 ```
 
-![Publications with Tigecycline in title](assets/images/publication_trends/1.png)
+![Publications with Tigecycline in title](../assets/images/publication_trends/1.png)
 
 Tigecycline was approved around 2005. The number of publications reflect this, with a sustained interest in the antibiotic since around 2005. Our next step is to repeat this step for every possible antibiotic. Firstly we need a list of all antibiotics, which is coveniently in one of the AMR package datasets: 
 
