@@ -1,0 +1,23 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/alegerada
+    - icon: linkedin
+      text: LinkedIn
+      href: https://uk.linkedin.com/in/alessandro-gerada-b295b471
+    - icon: github
+      text: Github
+      href: https://github.com/agerada
+    - icon: at
+      href: mailto:alessandro.gerada@liverpool.ac.uk
+
+---
+
+[Alessandro Gerada](https://www.liverpool.ac.uk/people/alessandro-gerada) is a final year doctoral student on the AI for Future Digital Health doctoral network, working in the [Antimicrobial Pharmacodynamics and Therapeutics](liverpool.ac.uk/apt) group. He is also a consultant microbiologist at NHS University Hospitals of Liverpool Group, where he leads the [Brucella Reference Unit](https://www.gov.uk/government/collections/brucella-reference-unit-bru). His research work is on artificial intelligence, machine learning, and simulation approaches for challenges in infectious diseases and microbiology, with a focus on antimicrobial resistance.
+
+Here, you will my (opinionated) views on various topics in microbiology.

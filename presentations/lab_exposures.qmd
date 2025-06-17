@@ -1,0 +1,91 @@
+---
+title: Laboratory-acquired infection – prevention and management
+author: Alessandro Gerada
+nocite: |
+  [@traxlerLiteratureReviewLaboratoryacquired2013], [@stevensExpertOpinionWhat2009],
+  [@peacockManagementAccidentalLaboratory2008], [@BrucellaReferenceUnit2020,  @healthandsafetyexecutiveApprovedListBiological2021; @singhLaboratoryAcquiredInfections2009]
+
+---
+
+# Introduction
+
+Straight-forward information is surprisingly difficult to find
+
+Used to be a typical essay question in FRCPath Part 2 – now likely to morph into short answer questions
+
+Large language models have made this sort of question easier to prepare for
+
+Questions usually involve an incident e.g., spill or handling of cultures on open bench
+
+There can be subtlety in how risk is described – err on side of caution
+
+# Immediate actions
+
+Always start by stressing immediate actions to terminate any further exposures
+
+# Information gathering
+
+Focus on aerosol-generating high-risk activities
+
+Robust documentation throughout – can get out of hand if collecting information retrospectively
+
+Involve the right teams – H&S, occupational health, laboratory management, UKHSA, etc
+
+Incident teams and meetings particularly if large exposure
+
+Modern one-room laboratory design has complicated management
+
+# Incident reporting and learning
+
+Important to highlight ability of lab to review and change practice
+
+Laboratory non-conformity, DATIX, incident report, RIDDOR (HSE)
+
+Most cases arise due to communication breakdown between clinicians and lab
+
+# Biosafety cabinets
+
+Class 1 cabinet –-- focused on protecting user
+
+[@advisorycommitteondangerouspathogensManagementOperationMicrobiological2019]
+
+![](images/class_1_bsc.png)
+
+---
+
+Class 2 cabinet --- protects user and material
+
+![](images/class_2_bsc.png)
+
+---
+
+Class 3 cabinet --- fully enclosed
+
+![](images/class_3_bsc.png)
+
+# MALDI-TOF
+
+Procedure itself is relatively safe, but plate set up and disposal involve handling of cultures
+
+Sepsityper can lead to earlier detection and reduce risk
+
+# Pathogen specific details
+
+Pathogen | Cont. level | Prophylaxis | Follow up
+---------|-------------|-------------|----------
+_Brucella_ | 3 | Doxycycline | Serology
+_Francisella_ | 3 | Doxycycline | Fever watch
+_B. pseudomallei_, _B. mallei_ | 3 | Co-T, Doxycycline, Co-amoxiclav | Serology (only for _B. pseudomallei_)
+_M. tuberculosis_ | 3 | NA | Symptoms, CXR, Quantiferon
+_N. meningitidis_ | 2 | Ciprofloxacin, rifampicin | 
+Enteric pathogens (Salmonellae, _Shigella_, toxigenic _E. coli_) | 3* | 
+_B. anthracis_ | 3 | Ciprofloxacin, doxycycline 
+Dimorphic fungi (_Blasomyces_, _Coccidioides_, _Histoplasma_) | 3 | Itraconazole | Serology
+
+# Comments
+
+Where serology indicated, baseline test should be collected and stored
+
+Viruses and protozoa are relatively rare causes
+
+# Further reading and references
