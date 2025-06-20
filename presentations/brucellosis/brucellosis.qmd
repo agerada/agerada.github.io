@@ -1,0 +1,374 @@
+---
+title: Brucellosis
+author: Alessandro Gerada
+date: 2023-09-04
+bibliography: bibliography.bib
+---
+
+# Brief history of brucellosis
+
+Described in many historical texts, all the way back to Hippocrates in 450 BC: 
+
+> ”Protracted fevers accompanied by ‘tumours’ and joint aches” [@hippocratesEpidemics]
+
+In 1751, Cleghorn describes intermittent tertian fevers in Minorca [@cleghornObservationsEpidemicalDiseases1749]. 
+
+In 1859, Assistant Surgeon Jeffrey Allen Marston described his own symptoms of "Mediterranean remittent" fever: 
+
+> There is no fever so irregular as this in its course and symptoms
+
+---
+
+::: columns
+
+:::: column
+
+Sir David Bruce, in 1886, visualised and isolated _Micrococcus melitensis_ from the spleen of a post-mortem patient: 
+
+_"As it had been found by experiment that the air of the mortuary was peculiarly rich in germs ... I removed the spleen to a small room in my quarters, the door and window of which had been keep shut for some time"_ [@bruceNoteDiscoveryMicroorganism1887]
+
+::::
+:::: column
+
+![](images/david_bruce.jpeg){ width=250px }
+
+::::
+:::
+
+# Etymology
+
+::: columns
+
+:::: column
+- Malta fever
+- Rock fever
+- Undulant fever
+- Mediterranean fever
+- Gibraltar fever
+- Cyprus fever
+- Neapolitan fever
+- Italian fever
+::::
+:::: column
+- Crimean fever
+- Corps disease
+- Satan’s fever
+- Scottish delight
+- Bang’s disease
+- Goat fever
+- Fist of mercy
+- Milk sickness
+- Jones disease
+::::
+:::
+
+# Other important historical milestones
+
+Development of serum agglutination method by Wright in 1897
+
+Isolation of _M. melitensis_ from goats by Temi Zammit in 1905 
+
+
+# Against all odds
+
+Zammit's first attempt at investigated serostatus of 7 goats [@wyattHowThemistoclesZammit2005]: 
+
+* all 7 were negative
+* it is estimated that at the time, 50% of Maltese goats were positive
+* odds of 7 negatives = 1:128
+
+Repeated experiment in 1905 on 6 goats – 5 positive
+
+Importantly, infected goats remained healthy
+
+# Mediterranean fever commission
+
+[@MembersMediterraneanFever]
+
+![](images/mediterranean_fever_commission.jpg){ width=250px }
+
+---
+
+Sir Temi Zammit led the excavation of Tarxien temples (image c/o Heritage Malta)
+
+![](images/temi_zammit.jpg){ width=250px }
+
+# Public health measures
+
+Pasteurisation was not introduced until the late 1930
+
+Public health measure to ban goat milk was put in place in 1906 (replaced with imported canned milk).
+
+A milkman strike in protest of the measures likely contributed to disease control [@vassalloCorpsDiseaseBrucellosis1992]. 
+
+---
+[@wyattLessonsHistoryBrucellosis2013]
+
+![](images/brucellosis_incidence1897-1936.png)
+
+# Bruce and the microbe
+
+::: columns
+:::: column
+>David found a little Germ 
+>
+>Its name, of course, you know;
+>
+>For everywhere that David goes 
+>
+>That name is sure to go.
+
+>He found it in a Spleen one day, 
+>
+>And raised a cultured stock; 
+>
+>"With you, " he said "I'll demonstrate 
+>
+>The postulates of Koch.. "
+
+:::: 
+:::: column
+
+>David knew a little Boat 
+>
+>That was for New York bound, 
+>
+>With five-and-sixty little goats 
+>
+>That yielded milk all round. 
+>
+>And in the milk that microbe lurked. 
+>
+>(Hence David would forbid it), 
+>
+>And when the men got sick and ill, 
+>
+>"Twas germs, " he said, "that did it. "
+
+[@vassalloCorpsDiseaseBrucellosis1992]
+::::
+:::
+
+# Bacteriology of _Brucella_ spp
+
+* Gram negative coccobacillus
+* Evolved from environmental soil organisms
+* "Triple positive":
+	* Oxidase positive
+	* Catalase positive
+	* Nitrate positive
+
+# _Brucella_ colonies
+
+[@ananthaFatalRareCase2019]
+
+![](images/image-2-x313-y533.png)
+
+# _Brucella_ Gram stain
+
+[@ananthaFatalRareCase2019]
+
+![](images/image-2-x314-y329.png)
+
+# Pathogenesis and immunity
+
+Intracellular survival protects organism: 
+
+* therapeutics depend on antimicrobials with high intracellular concentrations
+* long-term survival causes recurrence and treatment failure
+
+Incomplete immunity
+
+# Species
+
+In 2020, the _Ochrobactrum_ genus was controversially assigned to the _Brucella_ genus [@morenoPathogenicityItsImplications2022]
+
+Species | Preferred zoonotic host
+-------------| ------------------
+_B. melitensis_ | goats, camels 
+_B. abortus_ | cattle
+_B. suis_ | pigs
+_B. canis_ | dogs
+_B. ovis_ | sheep
+_B. pinnipedialis_ | sea mammals
+
+# Transmission and risk factors
+
+Modality | Mechanism
+--------------|---------
+inhalation | aerosols
+ingestion | dairy products
+direct contact | inoculation/hypersensitivity
+uncommon | human breast milk <br> sexual <br> blood transfusion <br> bone marrow transplant
+
+# Worldwide epidemiology
+
+[@pappasNewGlobalMap2006]
+
+![](images/image-1-x29-y41.png)
+
+# European epidemiology
+
+[@europeancentrefordiseasepreventionandcontrolBrucellosisAnnualEpidemiological2022]
+
+![](images/image-3-x58-y394.png)
+
+# Clinical features of brucellosis in humans
+
+Travel history is undoubtedly the most important question
+
+Fever is the most important finding – classically undulating (waves) or remittent (comes and goes), although rarely seen
+
+Musculoskeletal symptoms – differentiate febrile myalgia from localised bone and joint involvement
+
+History may be long
+
+Most patients are not severely unwell (if so, suggests infective endocarditis)
+
+Any organ can be involved
+
+# Undulant fever
+
+[@hardyUndulantFeverSpecial1930]
+
+![](images/image-30-x43-y316.png)
+
+# Diagnosis – culture
+
+Culture is unequivocal evidence of infection (i.e., _Brucellae_ do not colonise)
+
+Blood culture: 
+
+* sensitivity probably around 40-50%
+* requirement for extended incubation times is less important if using automated incubator
+
+Bone marrow has higher sensitivity – 60%
+
+Other sites – joints, abscesses, etc.
+
+Identification – MALDI-TOF is good, but defaults to _B. melitensis_
+
+# Laboratory risk
+
+Significant laboratory risk – probably the most important laboratory pathogen [@traxlerLiteratureReviewLaboratoryacquired2013]
+
+Largest laboratory outbreak reported in Lanzhou, China (2019) [@pappasLanzhouBrucellaLeak2022]
+
+>An inadequacy in sanitizing processes in a biopharmaceutical plant in Lanzhou, China, during July and August 2019, led to the aerosolization of Brucella that was subsequently spread through wind to nearby settlements and academic institutes, resulting in more than 10 000 human brucellosis cases...
+
+> ...officials responsible for the leak have been identified and punished...
+
+# UK guidelines
+
+Guidance on UK management available on [BRU website](https://www.gov.uk/government/collections/brucella-reference-unit-bru) (punishment for responsible microbiologists is not specified)
+
+![](images/bru_flowchart.png)
+
+# Castañeda medium
+
+[@castanedaNewMediumIsolation]
+
+![](images/castaneda_medium.jpg)
+
+# Diagnosis – serology
+
+Wright's Serum Tube Agglutination remains the gold standard test – unchanged for over 120 years
+
+Procedure: 
+
+* Set up serial dilutions of the test serum
+* Add antigen (heated _B. abortus_) to tubes
+* Incubate overnight
+* Agglutinating serum forms clumps in the bottom of the tube
+* Non-agglutinating serum remains cloudy, with no clumps
+
+_B. canis_ lacks LPS, therefore needs specific serology
+
+# SAT
+
+[@mariamPrevalenceBrucellosisChangra2017]
+
+![](images/image-9-x50-y161.png)
+
+# Prozone effect
+
+[@jinProzoneEffectDiagnosis2016]
+
+![](images/image-3-x65-y517.png)
+
+# Interpretation of serology tests
+
+Variation between runs and interpreter – quality assurance is critical
+
+Ideally demonstrate 4-fold increase in titre
+
+An absolute cut-off is hard to define – certain titres may be tolerated in endemic areas
+
+1:160 is the most agreed on cut-off
+
+Other agglutination tests, e.g., Rose Bengal, work the same way
+
+# Diagnosis – PCR
+
+Around 80% sensitive
+
+Useful, but beware of idiosyncratic prolonged positivity
+
+# Case study
+
+Clinical suspicion should be raised by presence of fever and travel to or residence in an endemic area (+/- consumption of high risk food)
+
+Chronic infection and end organ involvement is challenging:
+
+>53-year-old man presented (Saudi Arabia) with ankle pain and swelling. No fever, animal contact, raw milk consumption reported. Routine observations and bloods normal. X-ray of ankle normal. Brucella serology 1:160. Treated with oral flucloxacillin. Bone scan showed uptake in ankle and great toe. Blood cultures negative, but synovial fluid culture of ankle joint grew _B. melitensis_. Repeat serology 1:640 
+>
+>(Adapted from: @madkourMadkoursBrucellosis2001)
+
+# Treatment
+
+Susceptibility testing is not helpful, although note that _B. abortus_ live vaccine strain is inherently rifampicin resistant
+
+Two agents minimum
+
+Duration: 
+
+* Uncomplicated/acute – 6 weeks
+* Chronic/complicated – 12 weeks
+
+# Antimicrobial agents
+
+In order of likely efficacy: 
+
+* doxycycline & streptomycin (or gentamicin)
+* doxycycline & rifampicin
+* doxycycline & co-trimoxazole
+
+Children (under 8) and pregnancy – rifampicin & co-trimoxazole
+
+# Global Impact
+
+Brucellosis is likely to be the most common worldwide zoonotic disease
+
+Although mortality rare, morbidity and loss of productivity due to illness is high
+
+_Brucella canis_ will continue to be of increasing concern in Europe and US
+
+Lanzhou outbreak shows why _Brucella_ spp continue to be recognised bioterrorism agents
+
+# Further reading
+
+On laboratory acquired infection: 
+Traxler, R.M., Lehman, M.W., Bosserman, E.A., Guerra, M.A., Smith, T.L., 2013. A literature review of laboratory-acquired brucellosis. J Clin Microbiol 51, 3055–3062. [https://doi.org/10.1128/JCM.00135-13](https://doi.org/10.1128/JCM.00135-13)
+
+On diagnostic methods:
+Yagupsky, P., Morata, P., Colmenero, J.D., 2019. Laboratory Diagnosis of Human Brucellosis. Clin Microbiol Rev 33, e00073-19. [https://doi.org/10.1128/CMR.00073-19](https://doi.org/10.1128/CMR.00073-19)
+
+On epidemiology and control:
+Corbel, M.J., Food and Agriculture Organization of the United Nations, World Health Organization, World Organisation for Animal Health, 2006. Brucellosis in humans and animals.
+
+Others: 
+[Brucella Reference Unit website](https://www.gov.uk/government/publications/brucella-reference-unit-bru-managing-laboratory-exposure) – flowcharts for laboratory exposure and request forms
+
+[CDC Brucella Reference Guide](https://www.cdc.gov/brucellosis/pdf/brucellosi-reference-guide.pdf) – useful general information
+
+# References
