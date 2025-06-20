@@ -1,0 +1,9 @@
+---
+title: Resources
+---
+
+# Presentations
+
+[Laboratory-acquired infection – prevention and management](presentations/lab_exposures/lab_exposures.qmd) --  summarises the general principles of managing laboratory exposures. This was a lecture delivered for infection trainees preparing for FRCPath Part 2.
+
+[Brucellosis](presentations/brucellosis/brucellosis.qmd) -- notes from a lecture. There is a lot of history in this one, but also some practical advice that is useful for exam preparation.
