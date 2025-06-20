@@ -1,0 +1,17 @@
+---
+title: New look -- Quarto
+date: 2025-06-20
+---
+
+This blog has just undergone a refresh. I have been using [Quarto](https://quarto.org) for most of my writing, such as academic manuscripts, presentations,
+and my PhD thesis. Naturally, I've been considering migrating this blog to Quarto
+as well; I've finally bit the bullet. The migration process has been easy,
+almost too easy. This really continues to cement my view that Quarto is the
+perfect fit for modern technical writing, especially as unlike RMarkdown it is not
+limited to R -- python is fully supported.
+
+For readers of this blog, not much has changed... yet. However, this change will
+hopefully allow me to post more (the publishing workflow is really easy),
+and add more features such as email subscriptions.
+
+More to follow..
