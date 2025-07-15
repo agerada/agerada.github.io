@@ -1,0 +1,16 @@
+---
+title: "Post-apocalyptic microbiology"
+date: 2025-06-21
+---
+
+After the recent release of 28 Years Later---a sequel to the zombie apocalypse movies 28 Days Later and 28 Weeks Later---I have been thinking... How would the microbiologists fare in such a bleak world. Would our knowledge become irrelevant? The threat of antimicrobial resistance seems inconsequential compared to the existential challenges encountered in these sorts of movies or literature.
+
+It's intersting to think about this "what if?" scenario. Are there any microbiology-specific skills or knowledge that would be useful in such a setting?
+
+Before we explore this, some terms and conditions must be set. Firstly, we will only consider situations where some societal structure or governance is in place. In a truly anarchistic society, where chaos reigns and physical strength is the daily currency, microbiology is effectively irrelevant. Therefore, we will only consider situations were there is some organised structure or society in place. The expectation here is that there would be some sort of organised society, with some leadership structure (not necessarily democratic). Similarly, some formal or informal rule of law that allows resources to be shared relatively equitably.
+
+Secondly, the cause of this unfortuante apocalpyse may be infectious in origin, but not necessarily so. I am interested in the wider contributions a microbiologist could offer a post-apocalyptic society. 
+
+It is likely that the most important role would be advising the _de facto_ governing body on the control of infectious disease through cohorting of the infected and their contacts, and other preventative measures such as basic hygeine. This could be targeted towards the infective cause of the calamity (if it is indeed caused by a communicable disease), or to the inevitable infectious ailments that would arise in a situation where modern societal structures, including healthcare, have collapsed.
+
+Already it is hard to imagine plausible contributions beyond this. The clinical management of patients would fall under general doctor care (see [Where There Is No Doctor](https://en.wikipedia.org/wiki/Where_There_Is_No_Doctor)) --- the microbiologist offers little more in practice. One may imagine whether a barebones laboratory could be constructed and run. A light microscope that uses natural could be a valuable tool in the right hands (and eyes). [Old-school solid culture media](https://asm.org/getattachment/7ec0de2b-bb16-4f6e-ba07-2aea25a43e76/protocol-28) could be prepared using fresh blood (usually sheep or horse). Gelatin could be prepared from animal bones and added as a solidifying agent. The media could be inoculated with infected material collected from various clinical sites. Indeed, gelatin was an important substance in the early days of bacteriology. The hydrolysis of gelatin, through gelatinase, was used as a biochemical test to identify certain pathogenic bacteria, for example to differentiate _Staphylococcus aureus_ ([gelatinase positive(https://asm.org/asm/media/protocol-images/gelatin-hydrolysis-test-protocol.pdf)]) from the coagulase-positive _Staphylococci_.
