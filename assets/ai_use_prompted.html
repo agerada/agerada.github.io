@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Generative AI in Scientific Writing — How to Detect It, and Why You Should Care (AI version) – Alessandro Gerada</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Alessandro Gerada</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/agerada"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/alegerada"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Generative AI in Scientific Writing — How to Detect It, and Why You Should Care (AI version)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><em>This post was generated by ChatGPT from the following prompt:</em></p>
+<p>Write a blog post on: Generative AI in scientific writing — how to detect it, and why you should care. Include references</p>
+</blockquote>
+<section id="generative-ai-in-scientific-writing-how-to-detect-it-and-why-you-should-care" class="level1">
+<h1>Generative AI in Scientific Writing — How to Detect It, and Why You Should Care</h1>
+<p>In recent years, the rise of <strong>generative artificial intelligence (GenAI)</strong> tools — especially large language models (LLMs) such as ChatGPT — has begun to reshape how scientific manuscripts are drafted, polished, and in some cases entirely composed. On one hand, this offers opportunities (e.g., aiding non-native speakers, streamlining writing). On the other, it raises serious concerns around <strong>research integrity, reproducibility, scholarly credibility, and authorship</strong>.</p>
+<p>In this post, we review:</p>
+<ol type="1">
+<li><strong>Why you should care</strong></li>
+<li><strong>How to detect GenAI usage in scientific writing</strong></li>
+<li><strong>What to do about it</strong></li>
+</ol>
+<hr>
+<section id="why-you-should-care" class="level2">
+<h2 class="anchored" data-anchor-id="why-you-should-care">Why You Should Care</h2>
+<p>There are multiple dimensions to the stakes: methodological, ethical, reputational, and systemic.</p>
+<section id="methodological-scientific-integrity-risks" class="level3">
+<h3 class="anchored" data-anchor-id="methodological-scientific-integrity-risks">1. Methodological &amp; Scientific-Integrity Risks</h3>
+<ul>
+<li>GenAI models can generate plausible-looking text which is nevertheless incorrect, misleading, or fabricated. For example, researchers have found that AI-based literature search tools returned mostly irrelevant or even non-existent references. (<a href="https://pubmed.ncbi.nlm.nih.gov/38771247">PubMed</a>)<br>
+</li>
+<li>These tools may produce “hallucinations” — statements or citations that sound credible but have no basis in fact. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11170961">PMC</a>)<br>
+</li>
+<li>The training data and internal workings of many models are opaque, meaning their outputs may embed hidden biases or outdated information. (<a href="https://research-and-innovation.cornell.edu/generative-ai-in-academic-research">Cornell Research &amp; Innovation</a>)<br>
+</li>
+<li>The use of GenAI may undermine reproducibility and transparency: if a paper segment was auto-generated, how can a reader verify its logic or sourcing? (<a href="https://link.springer.com/article/10.1007/s43681-024-00649-6">SpringerLink</a>)</li>
+</ul>
+</section>
+<section id="ethical-authorship-concerns" class="level3">
+<h3 class="anchored" data-anchor-id="ethical-authorship-concerns">2. Ethical &amp; Authorship Concerns</h3>
+<ul>
+<li>Who “owns” text generated by an AI model? Passing off GenAI-written text as one’s own can raise issues of <strong>plagiarism or misrepresentation</strong>. (<a href="https://www.wired.com/story/use-of-ai-is-seeping-into-academic-journals-and-its-proving-difficult-to-detect">Wired</a>)<br>
+</li>
+<li>Many journals now require <strong>disclosure</strong> of any GenAI assistance, or prohibit undisclosed use. (<a href="https://research-and-innovation.cornell.edu/generative-ai-in-academic-research">Cornell Research &amp; Innovation</a>)<br>
+</li>
+<li><strong>Equity issues</strong>: some tools are accessible only to well-funded researchers, potentially widening divides in scientific publishing. (<a href="https://link.springer.com/article/10.1007/s43681-024-00649-6">SpringerLink</a>)</li>
+</ul>
+</section>
+<section id="reputational-systemic-risks" class="level3">
+<h3 class="anchored" data-anchor-id="reputational-systemic-risks">3. Reputational &amp; Systemic Risks</h3>
+<ul>
+<li>The credibility of science depends on trust in peer review and ethical norms. Undisclosed or improper GenAI use threatens that trust. (<a href="https://researchintegrityjournal.biomedcentral.com/articles/10.1186/s41073-025-00165-z">Research Integrity Journal</a>)<br>
+</li>
+<li>Research integrity frameworks are under strain in the GenAI era. (<a href="https://arxiv.org/abs/2412.10134">arXiv</a>)<br>
+</li>
+<li>If large volumes of low-quality or superficially generated manuscripts enter the literature, this could <strong>dilute the signal-to-noise ratio</strong> and slow scientific progress.</li>
+</ul>
+<p><strong>In short:</strong> even if you are <em>not</em> personally using GenAI, you should care — because the entire publishing ecosystem is changing.</p>
+<hr>
+</section>
+</section>
+<section id="how-to-detect-generative-ai-assistance-in-scientific-writing" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-detect-generative-ai-assistance-in-scientific-writing">How to Detect Generative-AI Assistance in Scientific Writing</h2>
+<p>Detecting GenAI use is not foolproof, but there are tell-tale patterns and tools that can help.</p>
+<section id="a.-what-to-look-for" class="level3">
+<h3 class="anchored" data-anchor-id="a.-what-to-look-for">A. What to Look For</h3>
+<p>Watch for these red flags:</p>
+<ul>
+<li><strong>Unusually polished but hollow prose</strong> — looks fluent, but lacks depth or critical insight. (<a href="https://annaclemens.com/blog/generative-ai-for-writing-scientific-papers">Anna Clemens Blog</a>)<br>
+</li>
+<li><strong>Generic or overly safe phrasing</strong> — lacks authorial style, nuance, or hedging.<br>
+</li>
+<li><strong>A-typical citations</strong> — nonexistent, irrelevant, or mismatched references. (<a href="https://annaclemens.com/blog/generative-ai-for-writing-scientific-papers">Anna Clemens Blog</a>)<br>
+</li>
+<li><strong>Inconsistent domain knowledge</strong> — plausible but subtly incorrect statements. (<a href="https://pubmed.ncbi.nlm.nih.gov/38909113">PubMed</a>)<br>
+</li>
+<li><strong>Missing revision history</strong> — lack of drafts or change logs.<br>
+</li>
+<li><strong>Style mismatch</strong> — sudden jump in writing quality compared to previous work.</li>
+</ul>
+</section>
+<section id="b.-detection-tools-with-caveats" class="level3">
+<h3 class="anchored" data-anchor-id="b.-detection-tools-with-caveats">B. Detection Tools — with Caveats</h3>
+<p>AI-text detectors can help, but they’re imperfect.</p>
+<ul>
+<li>One study found that AI content detectors correctly identified AI-generated manuscripts only <strong>43.5 %</strong> of the time, with false positives for human text at <strong>9.4 %</strong>. (<a href="https://pubmed.ncbi.nlm.nih.gov/38909113">PubMed</a>)<br>
+</li>
+<li>Detectors fail when text is rephrased or machine-translated. (<a href="https://edintegrity.biomedcentral.com/articles/10.1007/s40979-023-00146-z">EdIntegrity</a>)<br>
+</li>
+<li>Traditional plagiarism tools often <strong>miss GenAI text</strong>, since it’s newly generated. (<a href="https://hamidiyemedj.com/articles/evaluating-the-accuracy-of-ai-generated-text-detection-in-scientific-writing/doi/hamidiyemedj.galenos.2025.71667">Hamidiye Medical Journal</a>)</li>
+</ul>
+<p><strong>Bottom line:</strong> use detection tools as <em>signals</em>, not as final proof.</p>
+</section>
+<section id="c.-a-practical-workflow-for-reviewers-and-editors" class="level3">
+<h3 class="anchored" data-anchor-id="c.-a-practical-workflow-for-reviewers-and-editors">C. A Practical Workflow for Reviewers and Editors</h3>
+<ol type="1">
+<li><strong>Initial screening</strong> — run sections through an AI detector.<br>
+</li>
+<li><strong>Manual check</strong> — look for shallow reasoning, generic language, or fake citations.<br>
+</li>
+<li><strong>Context check</strong> — request draft versions or author explanations.<br>
+</li>
+<li><strong>Verify references</strong> — confirm that citations exist and are relevant.<br>
+</li>
+<li><strong>Require transparency</strong> — authors should disclose GenAI use and how outputs were verified. (<a href="https://research-and-innovation.cornell.edu/generative-ai-in-academic-research">Cornell Research &amp; Innovation</a>)<br>
+</li>
+<li><strong>Apply policy consistently</strong> — undisclosed GenAI use may justify editorial action.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="why-this-matters-for-you" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-for-you">Why This Matters for You</h2>
+<section id="if-youre-an-author" class="level3">
+<h3 class="anchored" data-anchor-id="if-youre-an-author">If You’re an Author</h3>
+<ul>
+<li>GenAI can help with structure or clarity — but <strong>you remain responsible</strong> for accuracy and integrity.<br>
+</li>
+<li>Always <strong>disclose AI use</strong> and verify all outputs.<br>
+</li>
+<li>Treat GenAI as a <strong>writing assistant</strong>, not a <strong>replacement for reasoning</strong>.</li>
+</ul>
+</section>
+<section id="if-youre-a-reviewer-or-editor" class="level3">
+<h3 class="anchored" data-anchor-id="if-youre-a-reviewer-or-editor">If You’re a Reviewer or Editor</h3>
+<ul>
+<li>Be alert to undisclosed GenAI use.<br>
+</li>
+<li>Encourage <strong>transparency</strong> and uphold editorial standards.<br>
+</li>
+<li>Push your journal or institution to define clear policies.</li>
+</ul>
+</section>
+<section id="if-youre-a-reader" class="level3">
+<h3 class="anchored" data-anchor-id="if-youre-a-reader">If You’re a Reader</h3>
+<ul>
+<li>Be critical of manuscripts that seem polished but vague.<br>
+</li>
+<li>Understand that disclosed GenAI use ≠ misconduct — but undisclosed use undermines trust.<br>
+</li>
+<li>The future of publishing depends on <strong>transparency and accountability</strong>.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h2>
+<p>Generative AI is neither wholly “good” nor “bad” for scientific writing. It can assist — but it also brings risks: fabricated citations, biased language, and loss of authorial accountability.</p>
+<p>To preserve research integrity, the scientific community must develop <strong>clear policies, robust detection tools, and cultural norms of transparency</strong>. Awareness and vigilance are essential for everyone involved in research, writing, and review.</p>
+<hr>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>Jain, R., &amp; Jain, A. (2023). <em>Generative AI in Writing Research Papers: A New Type of Algorithmic Bias and Uncertainty in Scholarly Work.</em> <a href="https://arxiv.org/abs/2312.10057">arXiv</a><br>
+</li>
+<li>Bjelobaba, S. et al.&nbsp;(2024). <em>Research Integrity and GenAI: A Systematic Analysis of Ethical Challenges Across Research Phases.</em> <a href="https://arxiv.org/abs/2412.10134">arXiv</a><br>
+</li>
+<li><em>The Role of Generative AI in Academic and Scientific Authorship: An Autopoietic Perspective.</em> (2025). <em>AI &amp; Society</em>, 40, 3225-3235. <a href="https://link.springer.com/article/10.1007/s00146-024-02174-w">SpringerLink</a><br>
+</li>
+<li><em>Artificial Intelligence-Assisted Academic Writing: Recommendations for Ethical Use.</em> (2025). <em>Advances in Simulation</em>, 10:22. <a href="https://advancesinsimulation.biomedcentral.com/articles/10.1186/s41077-025-00350-6">BioMed Central</a><br>
+</li>
+<li><em>Performance of AI Content Detectors Using Human and AI-Generated Scientific Writing.</em> (2024). <a href="https://pubmed.ncbi.nlm.nih.gov/38909113">PubMed</a><br>
+</li>
+<li><em>Use of AI Is Seeping Into Academic Journals—and It’s Proving Difficult to Detect.</em> (2024). <a href="https://www.wired.com/story/use-of-ai-is-seeping-into-academic-journals-and-its-proving-difficult-to-detect">Wired</a><br>
+</li>
+<li><em>Generative AI in Scholarly Writing: Opportunities …</em> (n.d.). <a href="https://tsp.scione.com/newfiles/tsp.scione.com/117/117-TSP_1.pdf">TSP Scientific Publishing PDF</a></li>
+</ul>
+<hr>
+<p><em>Interested in a companion resource? I can generate a <strong>Markdown checklist or tool-guide</strong> for detecting and managing GenAI use in manuscripts — perfect for reviewers, editors, or researchers.</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/agerada\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
