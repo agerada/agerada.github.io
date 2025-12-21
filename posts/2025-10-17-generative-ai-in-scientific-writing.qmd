@@ -1,6 +1,7 @@
 ---
 title: "Generative AI in scientific writing --- how to detect it, and why you should care"
-draft: true
+draft: false
+date: 2025-12-21
 ---
 
 Generative artificial intelligence is everywhere. In reddit posts, instagram, even Spotify. Everywhere. 
@@ -14,4 +15,42 @@ Scientific writing has also been impacted by generative AI. Many changes are pos
 
 An interesting development that I have observed is that humans are becoming more capable at detecting AI content. The pervasiveness of such content is even affecting people's enjoyement when consuming media or art. A piece of AI created literature or art may be "good" (however you want to define that), but do we enjoy it as much? See [here](https://www.ft.com/content/d003cdfc-aded-4a9d-9a24-e1aff5261cfa) for an excellent discussion around this.
 
-In this post, I'm going to go through my approach to determining whether a piece of writing (such as a blog post, or a policy document) has been predominantly AI-written. Before doing so, I should clarify why one should care about this. Since AI has made it easier to create content, it introduces an increased risk of erroneous or unreliable content. On a superficial level, this includes errors introduced from the AI itself. On a deeper level is that the reduced development time (not in and of itself a bad thing), means that issues of quality or accuracy that would have been detected through iterations of the work during development are more likely to creep through. Simply put, content that is clearly AI-produced is more likely to suffer deficiences in quality, and need to be assessed more carefully. Whether the reader can afford to devote their time to this additional scrutiny is another matter. Onto the important stuff. Here is my AI-check workflow. I have ordered this in decreasing importance of 
+In this post, I'm going to go through my approach to determining whether a piece of writing (such as a blog post, or a policy document) has been predominantly AI-written. Before doing so, I should clarify why one should care about this. Since AI has made it easier to create content, it introduces an increased risk of erroneous or unreliable content. On a superficial level, this includes errors introduced from the AI itself. On a deeper level is that the reduced development time (not in and of itself a bad thing), means that issues of quality or accuracy that would have been detected through iterations of the work during development are more likely to creep through. Simply put, content that is clearly AI-produced is more likely to suffer deficiences in quality, and need to be assessed more carefully. Whether the reader can afford to devote their time to this additional scrutiny is another matter. Onto the important stuff. Here is my AI-check workflow. I have ordered this in decreasing importance in determining whether text is AI-generated. 
+
+## Start by looking at the references and citations
+
+If a text fails the AI "whiff test", i.e., at first glance it looks like it might be AI, then jump straight to the references (if present). Take a few references and google them. If any of them do not exist, then I usually stop reading right there. Although AI can happily generate a bibliography, it often generates plauisbly sounding but completely made-up references. No human (I hope) would do this. 
+
+It is also worth looking through a few citations within the text. If the references are real, but are used completely out of context, then be careful. This is an issue that does occasionally creep into otherwise well-written documents, but should not happen systematically.
+
+## Look for emoji bullet points
+
+😺 I have no idea why,
+
+⬆️ AI insists on using,
+
+⚠️ emojis in bullet points.
+
+## Does the tone feel off?
+
+This one is hard to describe. I find AI has an overly-positive, non-controversial tone that lists out pros and cons to different points. In fairness, the tone does vary from one model to another, but is usually easy to pick up with a bit of practice. 
+
+## Excessive use of bullet points or lists
+
+There's nothing wrong with separating items into bullet points. Nevertheless, I find AI overdoes this, and seems to consistently prefer to outline arguments using lists rather than paragraphs.
+
+## Excessive use of em dash
+
+This is another tricky one --- the [em dash](https://en.wikipedia.org/wiki/Dash) is simply good punctuation. Unfortunately, AI does seem to use it frequently, albeit appropriately. Since human writers perhaps do not use this punctuation mark quite as much, it's use has been marked as a way of detecting generated content. This one is a real shame, as it now means that some writers are actively avoiding using the em dash, fearing that readers will assume they are AI.
+
+---
+
+To summarise, I think we all have to be responsible in our use of AI. As a minimum, we must ensure that our outputs are factually correct. I will go a step further and also argue that we should not simply use AI as a tool to generate more stuff, just for the sake of it, simply adding to the mountains of noise already out there. If you are about to share a document that was made using a few AI prompts, with little modifications, then ask yourself: does the world really need this document?
+
+Keep in mind as well, that humans are becoming quite adept at detecting AI content. Whether there comes a point when this becomes impossible, I do not know; but we are not there yet.
+
+---
+
+_I may follow this up with a seperate piece with my suggestions for what I consider responsible use of AI_
+
+_I thought it would be interesting to ask ChatGPT to recreate this blog post. The results are [here](../assets/ai_use_prompted.md). How many of the above tropes do you pick out?_
